@@ -32,7 +32,7 @@ A list of technologies used within the project:
 - CSS - Adding style to the web pages.
 - JavaScript - Adding functionality to the web pages.
   \*Three.js - Used in - 1. Landing page animation, 2. Minimalist Block game animation with BGM.(can be
-  accessed by clicking on the ‘play’ button on the landing page, 3. Background music effects on homepage and game page - can be controlled by buttons "play sound" and "pause sound". on bottom left ocrner or top left corner.
+  accessed by clicking on the ‘play’ button on the landing page, 3. Background music effects on homepage and game page - can be controlled by buttons "play sound" and "pause sound". on bottom left corner or top left corner.
 
 ## Installation
 
