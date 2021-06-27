@@ -22,7 +22,7 @@ audioLoader.load("test_pubG.ogg", function (buffer) {
 });
 
 var renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setClearColor("#202125");
+renderer.setClearColor("#000000");
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 document.body.appendChild(renderer.domElement);
@@ -79,15 +79,15 @@ function onMouseMove(event) {
     this.tl = new TimelineMax();
     this.tl.to(intersects[i].object.scale, 1, { x: 2, ease: Expo.easeOut });
     this.tl.to(intersects[i].object.scale, 0.5, { x: 0.5, ease: Expo.easeOut });
-    // this.tl.to(
-    //   intersects[i].object.position,
-    //   0.5,
-    //   {
-    //     x: 2,
-    //     ease: Expo.easeOut,
-    //   },
-    //   "-1.5"
-    // );
+    this.tl.to(
+      intersects[i].object.position,
+      0.5,
+      {
+        x: 2,
+        ease: Expo.easeOut,
+      },
+      "-1.5"
+    );
     this.tl.to(
       intersects[i].object.rotation,
       0.5,
@@ -100,10 +100,10 @@ function onMouseMove(event) {
 window.addEventListener("mousemove", onMouseMove);
 render();
 
-// document.getElementById("pause").addEventListener("click", () => {
-//   sound.pause();
-// });
+document.getElementById("pause").addEventListener("click", () => {
+  sound.pause();
+});
 
-// document.getElementById("play").addEventListener("click", () => {
-//   sound.play();
-// });
+document.getElementById("play").addEventListener("click", () => {
+  sound.play();
+});
