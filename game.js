@@ -8,6 +8,19 @@ var camera = new THREE.PerspectiveCamera(
 
 camera.position.z = 2;
 
+const listener = new THREE.AudioListener();
+camera.add(listener);
+// create a global audio source
+const sound = new THREE.Audio(listener);
+// load a sound and set it as the Audio object's buffer
+const audioLoader = new THREE.AudioLoader();
+audioLoader.load("test_pubG.ogg", function (buffer) {
+  sound.setBuffer(buffer);
+  sound.setLoop(true);
+  sound.setVolume(0.5);
+  sound.play();
+});
+
 var renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setClearColor("#e5e5e5");
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -28,7 +41,7 @@ var mesh = new THREE.Mesh(
   new THREE.MeshLambertMaterial({ color: 0xffcc00 })
 );
 mesh.position.set(0, -0.75, 0);
-mesh.rotation.set(90, 0, 0);
+mesh.rotation.set(Math.PI * 0.5, 0, 0);
 scene.add(mesh);
 
 var plane = new THREE.Mesh(
@@ -36,7 +49,7 @@ var plane = new THREE.Mesh(
   new THREE.MeshBasicMaterial({ color: 0x3c3c3d, side: THREE.DoubleSide })
 );
 plane.position.set(0, -1, 0);
-plane.rotation.set(90, 0, 0);
+plane.rotation.set(Math.PI * 0.5, 0, 0);
 scene.add(plane);
 
 // mesh.rotation.set(10,0,0); // about x,y,z axis
@@ -58,21 +71,27 @@ var render = function () {
 
 render();
 
-const pos = mesh.position.x;
+const posx = mesh.position.x;
+const posy = mesh.position.y;
 
 document.body.addEventListener("keypress", (x) => {
-  if (x.key == "a" && mesh.position.x >= pos) {
+  if (x.key == "a" && mesh.position.x >= posx) {
     mesh.position.x -= 1;
     //    camera.position.x -=1;
-  } else if (x.key == "d" && mesh.position.x <= pos) {
+  } else if (x.key == "d" && mesh.position.x <= posx) {
     mesh.position.x += 1;
     // camera.position.x +=1;
+  } else if (x.key == "w") {
+    mesh.position.z -= 1;
+  } else if (x.key == "s") {
+    mesh.position.z += 1;
   }
 });
 
-this.t1 = TimeLineMax({ paused: true }).delay(0.3);
-this.tl.to(this.mesh.scale, 1, { x: 2, ease: Expo.easeOut });
-this.tl.to(this.mesh.scale, 0.5, { x: 1, ease: Expo.easeOut });
+document.getElementById("pause").addEventListener("click", () => {
+  sound.pause();
+});
 
-this.tl.to(this.mesh.position, -0.75, { y: 2, ease: Expo.easeOut });
-this.tl.to(this.mesh.scale, 0.5, { x: 1, ease: Expo.easeOut }, "=-1.5");
+document.getElementById("play").addEventListener("click", () => {
+  sound.play();
+});

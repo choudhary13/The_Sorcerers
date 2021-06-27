@@ -604,3 +604,8 @@ footer #social-media-footer ul li:hover a .fa-github {
     width: 85%;
   }
 }
+#foo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
