@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>eSports</title>
+</head>
+
+<body>
+  <div id="slideout-menu">
+      <ul>
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a href="esports.html">Esports in India</a>
+          </li>
+          <li>
+              <a href="about.html">About</a>
+          </li>
+          <li>
+            <input type="text" id="myInput2" onkeyup="myFunc()" placeholder="Search a Hobby">
+            <ul id="myUL">
+                <li><a href="pvp.html">PVP</a></li>
+                <li><a href="rts.html">RTS</a></li>
+                <li><a href="fps.html">FPS</a></li>
+                <li><a href="moba.html">MOBA</a></li>
+            </ul>
+          </li>
+      </ul>
+  </div>
+
+  <nav>
+      <div id="logo-img">
+          <a href="index.html">
+              <img src="img/logo.png" alt="esports logo">
+          </a>
+      </div>
+      <div id="menu-icon">
+          <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a class="active" href="esports.html">Esport</a>
+          </li>
+          <li>
+              <a href="about.html">About</a>
+          </li>
+          <li>
+            <div id="search-icon" class="dropdown">
+              <i class="fas fa-search" onclick="myFunction()"></i>
+              <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                  <a href="pvp.html">PVP</a>
+                  <a href="rts.html">RTS</a>
+                  <a href="fps.html">FPS</a>
+                  <a href="moba.html">MOBA</a>
+              </div>
+            </div>
+          </li>
+      </ul>
+  </nav>
+
+  <div id="searchbox">
+      <input type="text" placeholder="Search Here">
+  </div>
+
+  <main>
+    <h2 class="page-heading">Esport</h2>
+
+    <section>
+      <div class="card">
+        <div class="card-image">
+          <a href="pvp.html">
+            <img src="pvp.png" alt="Card Image">
+          </a>
+        </div>
+
+        <div class="card-description">
+          <a href="pvp.html">
+            <h3>PVP</h3>
+          </a>
+          <p>
+            content...
+          </p>
+          <a href="pvp.html" class="btn-readmore">Read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <a href="rts.html">
+            <img src="rts.png" alt="Card Image">
+          </a>
+        </div>
+
+        <div class="card-description">
+          <a href="rts.html">
+            <h3>RTS</h3>
+          </a>
+          <p>
+            content..
+          </p>
+          <a href="rts.html" class="btn-readmore">Read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <a href="fps.html">
+            <img src="fps.png" alt="Card Image">
+          </a>
+        </div>
+
+        <div class="card-description">
+          <a href="fps.html">
+            <h3>FPS</h3>
+          </a>
+          <p>
+            content...
+          </p>
+          <a href="fps.html" class="btn-readmore">Read more</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <a href="moba.html">
+            <img src="moba.png" alt="Card Image">
+          </a>
+        </div>
+
+        <div class="card-description">
+          <a href="moba.html">
+            <h3>MOBA</h3>
+          </a>
+          <p>
+            content..
+          </p>
+          <a href="moba.html" class="btn-readmore">Read more</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- <div class="pagination">
+      <a href="#">Prev</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">Next</a>
+    </div> -->
+
+    <footer>
+        <div id="left-footer">
+            <h3>Quick Links</h3>
+            <p>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="esports.html">Esport</a>
+                    </li>
+                    <li>
+                      <a href = "mailto: rajput.1@iitj.ac.in">Contact Us</a>
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="right-footer">
+            <h3>Follow us on</h3>
+            <div id="social-media-footer">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mynk-rjpt/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ekta0609" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Developed by team 'The_Sorcerers'</p>
+        </div>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

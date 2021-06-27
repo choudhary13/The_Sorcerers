@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>eSports</title>
+</head>
+
+<body>
+  <div id="slideout-menu">
+      <ul>
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a href="esports.html">Esports</a>
+          </li>
+          <li>
+              <a href="about.html">About</a>
+          </li>
+          <li>
+            <input type="text" id="myInput2" onkeyup="myFunc()" placeholder="Search an Esport">
+            <ul id="myUL">
+                <li><a href="pvp.html">PVP</a></li>
+                <li><a href="rts.html">FPS</a></li>
+                <li><a href="fps.html">RTS</a></li>
+                <li><a href="moba.html">MOBA</a></li>
+            </ul>
+          </li>
+      </ul>
+  </div>
+
+  <nav>
+      <div id="logo-img">
+          <a href="index.html">
+              <img src="img/logo.png" alt="esports logo">
+          </a>
+      </div>
+      <div id="menu-icon">
+          <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+          <li>
+              <a href="index.html">Home</a>
+          </li>
+          <li>
+              <a href="esports.html">Esports</a>
+          </li>
+          <li>
+              <a class="active" href="about.html">About</a>
+          </li>
+          <li>
+            <div id="search-icon" class="dropdown">
+                <i class="fas fa-search" onclick="myFunction()"></i>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                     <a href="pvp.html">PVP</a>
+                     <a href="rts.html">RTS</a>
+                     <a href="fps.html">FPS</a>
+                     <a href="moba.html">MOBA</a>
+                </div>
+              </div>
+        </li>
+      </ul>
+  </nav>
+
+  <div id="searchbox">
+      <input type="text" placeholder="Search Here">
+  </div>
+
+  <main>
+
+    <h2 class="page-heading">About Glee</h2>
+    <div id="post-container">
+      <section id="hobby">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/14.jpg" alt="Card Image">
+          </div>
+          <div class="card-description">
+            <h3>About ESports</h3>
+            <p>Esports, also known as electronic sports, e-sports, or eSports is a form of competition using video games.
+            <ul>
+                <p><li>For personality development </li></p>
+                <p><li>Allows you to destress yourself while remaining mentally productive.</li></p>
+                <p><li>Reduce the risk of depression and dementia</li></p>
+                <p><li>Can be an additional source of income</li></p>
+                <p><li>It’s a skill afterall which will come in handy to leave an impression. Hence we need an engaging platform to make it easy for the users to develop a hobby.</li></p>
+            </ul> </p>
+            <p>Today, the esport economy is worth in excess of $US600 million and it continues to grow 40 percent year-on-year. In Australia, it has surpassed the days of college LAN parties and now holds world-wide events with sponsors like Red Bull supporting the next wave of gamers and their fans. </p>
+            <p>...more</p>
+
+            <h3>About Us</h3>
+            <p>We, the sophomores of IIT Jodhpur developed this website as an online competition - 'WebOCode' conducted by NSUT. <br>Contributors of this project are :
+            <ul>
+                <p><li>Ekta Choudhary</li></p>
+                <p><li>Mayank Singh Rajput</li></p>
+                <p><li>Nandani Mandawat</li></p>
+            </ul></p>
+
+          </div>
+        </div>
+
+      </section>
+
+      <aside id="sidebar">
+        <h3>Reach out to one of us</h3>
+        <p>Nandani</p>
+        <p><a href="https://github.com/Ekta0609" target="_blank" style="color: #f2687f;">Github</a></p>
+        <p><a href="http://www.linkedin.com/in/ekta-choudhary-3898b61a0" target="_blank" style="color: #f2687f;">Linkedin</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=100006865606663" target="_blank" style="color: #f2687f;">Facebook</a></p>
+        <p>Ekta</p>
+        <p><a href="https://github.com/Ekta0609" target="_blank" style="color: #f2687f;">Github</a></p>
+        <p><a href="http://www.linkedin.com/in/ekta-choudhary-3898b61a0" target="_blank" style="color: #f2687f;">Linkedin</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=100006865606663" target="_blank" style="color: #f2687f;">Facebook</a></p>
+        <p>Mayank</p>
+        <p><a href="https://github.com/mynk-rjpt" target="_blank" style="color: #f2687f;">Github</a></p>
+        <p><a href="www.linkedin.com/in/mynk-rjpt" target="_blank" style="color: #f2687f;">Linkedin</a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=100006865606663" target="_blank" style="color: #f2687f;">Facebook</a></p>
+      </aside>
+    </div>
+
+    <footer>
+        <div id="left-footer">
+            <h3>Quick Links</h3>
+            <p>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="esports.html">Esport</a>
+                    </li>
+                    <li>
+                        <a href = "mailto: rajput.1@iitj.ac.in">Contact Us</a>
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="right-footer">
+            <h3>Follow us on</h3>
+            <div id="social-media-footer">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mynk-rjpt/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Ekta0609/" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Developed by team 'The_Sorcerers'</p>
+        </div>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
