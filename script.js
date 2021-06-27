@@ -8,18 +8,18 @@ var camera = new THREE.PerspectiveCamera(
 );
 camera.position.z = 5;
 
-const listener = new THREE.AudioListener();
-camera.add(listener);
-// create a global audio source
-const sound = new THREE.Audio(listener);
-// load a sound and set it as the Audio object's buffer
-const audioLoader = new THREE.AudioLoader();
-audioLoader.load("test_pubG.ogg", function (buffer) {
-  sound.setBuffer(buffer);
-  sound.setLoop(true);
-  sound.setVolume(0.5);
-  sound.play();
-});
+// const listener = new THREE.AudioListener();
+// camera.add(listener);
+// // create a global audio source
+// const sound = new THREE.Audio(listener);
+// // load a sound and set it as the Audio object's buffer
+// const audioLoader = new THREE.AudioLoader();
+// audioLoader.load("test_pubG.ogg", function (buffer) {
+//   sound.setBuffer(buffer);
+//   sound.setLoop(true);
+//   sound.setVolume(0.5);
+//   sound.play();
+// });
 
 var renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setClearColor("#000000");

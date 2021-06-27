@@ -5,7 +5,7 @@ body {
 
 h1 {
   padding: 8px;
-  background: #f2687f;
+  background: #ff0040;
   border-radius: 8px;
   margin: 0;
   font-size: 64px;
@@ -117,7 +117,7 @@ textarea:focus {
 /* Navigation */
 
 nav {
-  height: 72px;
+  height: 60px;
   background: #202125;
   width: 100%;
   margin: 0;
@@ -139,7 +139,7 @@ nav a {
 
 nav a:hover {
   text-decoration: none;
-  color: #f2687f;
+  color: #ff0040;
 }
 
 nav ul {
@@ -152,11 +152,12 @@ nav ul {
 }
 
 .active {
-  color: #f2687f;
+  color: #ff0040;
 }
 
 #logo-img {
   display: flex;
+
   height: 100%;
   background: #202125;
   padding: 0 0px;
@@ -167,6 +168,7 @@ nav ul {
 
 #logo-img img {
   height: 100px;
+  width: 90%;
 }
 
 #logo-img:hover {
@@ -192,7 +194,7 @@ nav ul {
 }
 
 #search-icon:hover {
-  color: #f2687f;
+  color: #ff0040;
 }
 
 /* Slideout Menu */
@@ -226,7 +228,7 @@ nav ul {
 }
 
 #slideout-menu a:hover {
-  color: #f2687f;
+  color: #ff0040;
   text-decoration: none;
 }
 
@@ -287,7 +289,7 @@ section {
 
 .section-heading:hover {
   padding: 4px 48px;
-  background: #f2687f;
+  background: #ff0040;
 }
 
 /* Section Source */
@@ -342,7 +344,7 @@ section {
 }
 
 .btn-readmore:hover {
-  background: #f2687f;
+  background: #ff0040;
   text-decoration: none;
   padding: 8px 64px 8px 24px;
   color: white;
@@ -363,7 +365,7 @@ footer a {
 
 footer #left-footer {
   flex: 1;
-  border-right: 1px solid #f2687f;
+  border-right: 1px solid #ff0040;
   padding-left: 32px;
 }
 
@@ -426,7 +428,7 @@ footer #social-media-footer ul li:hover a .fa-github {
 
 .page-heading:hover {
   padding: 4px 48px;
-  background: #f2687f;
+  background: #ff0040;
 }
 
 .card-meta {
