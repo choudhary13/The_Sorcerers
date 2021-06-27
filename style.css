@@ -605,11 +605,11 @@ footer #social-media-footer ul li:hover a .fa-github {
   top: 40%;
   left: 5%;
   font-family: "Montserrat";
-  font-size: 4em;
+  font-size: 3em;
   text-transform: uppercase;
   width: auto;
   line-height: 0.8em;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   border: 5px solid rgb(255, 255, 255);
   padding: 0.2em;
   text-align: center;

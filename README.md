@@ -3,16 +3,17 @@
 ## Table of Contents
 
 1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [Run on Local Host](#run)
+2. [Our Focus](#our_focus)
+3. [Technologies](#technologies)
+4. [Installation](#installation)
+5. [Collaborations](#collaboration)
+6. [To Run on Local Host](#run)
 
 ### General Info
 
 ---
 
-This project is on front end website development. The Project name is - ‘the &orcerers’. In this website
+This project is on front end website development. The team name is - ‘the Sorcerers’. In this website
 development project, the idea is to make a website listing all the popular types of esports along with
 popular youtube links for the same ,where users can come and explore to learn one for themselves.
 This website is fully responsive for any type of screen.
@@ -27,29 +28,34 @@ We have mainly focused on the attractiveness of the website to make it attractiv
 
 A list of technologies used within the project:
 
-- HTML
-- CSS
-- JavaScript
-- Web Scraping
-- Text Processing
+- HTML - Structuring the webpages.
+- CSS - Adding style to the web pages.
+- JavaScript - Adding functionality to the web pages.
+  \*Three.js - Used in - 1. Landing page animation, 2. Minimalist Block game animation with BGM.(can be
+  accessed by clicking on the ‘play’ button on the landing page, 3. Background music effects on homepage and game page - can be controlled by buttons "play sound" and "pause sound". on bottom left ocrner or top left corner.
 
 ## Installation
 
 ---
 
-VS Code
-
-````$ github integration
+VS Code```
+$ github integration
 $ github desktop app
-```## Collaboration
-***
+
+## Collaboration
+
+---
+
 Mayank Singh Rajput
 Ekta Choudhary
-Nandani
+Nandani Mandawat
+
 > Using github cloning
-> Anyone want to contribute can fork the repository and send merge requests
-## Run on local host
+
+## To Run on local host
+
+---
+
 ★ Download all the github files
 ★ open and extract them .
-★ click on index.html to run on local host in pre-installed browser
-````
+★ click on index.html to run on the local host in the pre-installed browser
